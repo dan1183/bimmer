@@ -12,8 +12,8 @@
         android:layout_height="52dp"
         android:layout_marginBottom="680dp"
         android:background="#3DA1D8"
-        android:text="@string/bimmer"
         android:gravity="center"
+        android:text="@string/bimmer"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,9 +46,11 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="84dp"
         android:backgroundTint="#3DA1D8"
+        android:onClick="onClickDoLog"
         android:text="Записаться на сервис"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bimmerHeader"
         app:layout_constraintVertical_bias="0.031" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
