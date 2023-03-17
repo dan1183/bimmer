@@ -46,7 +46,6 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="84dp"
         android:backgroundTint="#3DA1D8"
-        android:onClick="onClickDoLog"
         android:text="Записаться на сервис"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

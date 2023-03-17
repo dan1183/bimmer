@@ -96,5 +96,4 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(info, message, duration);
         toast.show();
     }
-
 }
