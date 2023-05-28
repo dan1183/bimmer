@@ -26,4 +26,5 @@ public class BMWSecondAdapter extends ArrayAdapter<Item> {
         textView.setText(item.getName());
         return view;
     }
+
 }
