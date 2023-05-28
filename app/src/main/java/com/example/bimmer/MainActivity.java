@@ -3,8 +3,11 @@ package com.example.bimmer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.webkit.WebView;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static String message = "Exit";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

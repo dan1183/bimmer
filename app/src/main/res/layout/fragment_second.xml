@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/footerMainPage2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="735dp"
+        android:width="10dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/companyContactsLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="735dp"
+        android:contentDescription="Switch to profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/free_icon_phone_call_126509"
+        app:tint="#707070" />
+
+    <ImageView
+        android:id="@+id/userProfileLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="735dp"
+        app:layout_constraintEnd_toEndOf="@id/footerMainPage"
+        app:layout_constraintTop_toTopOf="@id/footerMainPage"
+        app:srcCompat="@drawable/user"
+        app:tint="#707070"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:onClick="switchToProfilePage" />
+
+    <ImageView
+        android:id="@+id/BMWLogo2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="167.5dp"
+        android:layout_marginTop="735dp"
+        android:src="@drawable/bmw_m_logo" />
+
+    <TextView
+        android:id="@+id/companyContactsText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="770dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Контакты"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal"
+        tools:text="Контакты" />
+
+    <TextView
+        android:id="@+id/userProfileText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="770dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Профиль"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal" />
+
+    <ImageView
+        android:id="@+id/homePageLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="735dp"
+        android:src="@drawable/home"
+        app:tint="#707070"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:onClick="switchToMainPage" />
+
+    <TextView
+        android:id="@+id/homePageText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="770dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Главная"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal" />
+
+    <ImageView
+        android:id="@+id/blogLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="735dp"
+        android:src="@drawable/blog"
+        app:tint="#707070" />
+
+    <TextView
+        android:id="@+id/blogText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="770dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Статьи"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#3DA1D8"
+        android:text="Выйти из аккаунта" />
+
+    <Button
+        android:id="@+id/buttonAuto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#3DA1D8"
+        android:text="Мое авто" />
+
+    <ListView
+        android:id="@+id/bmwListVIew"
+        android:layout_width="match_parent"
+        android:layout_height="736dp" />
+
+</FrameLayout>
