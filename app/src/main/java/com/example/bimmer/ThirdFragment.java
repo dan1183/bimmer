@@ -8,12 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
-
+import androidx.navigation.Navigation;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -73,9 +72,7 @@ public class ThirdFragment extends Fragment {
         imgHomePage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                requireActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container_view, new FirstFragment())
-                        .commit();
+                Navigation.findNavController(v).navigate(R.id.action_thirdFragment_to_firstFragment);
                 Log.d("111", "Clicked home page button");
             }
         });
@@ -83,9 +80,7 @@ public class ThirdFragment extends Fragment {
         imgProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                requireActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container_view, new SecondFragment())
-                        .commit();
+                Navigation.findNavController(v).navigate(R.id.action_thirdFragment_to_secondFragment);
                 Log.d("111", "Clicked user profile button");
             }
         });

@@ -42,8 +42,7 @@
         app:layout_constraintTop_toTopOf="@id/footerMainPage"
         app:srcCompat="@drawable/user"
         app:tint="#707070"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:onClick="switchToProfilePage" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/BMWLogo"
@@ -93,8 +92,7 @@
         android:layout_marginTop="735dp"
         android:src="@drawable/home"
         app:tint="#707070"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:onClick="switchToMainPage" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/homePageText"
@@ -152,7 +150,7 @@
     <WebView
         android:id="@+id/bimmerBlogWebView"
         android:layout_width="match_parent"
-        android:layout_height="685dp"
+        android:layout_height="686dp"
         android:layout_marginTop="50dp" />
 
 </FrameLayout>

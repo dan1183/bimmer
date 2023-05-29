@@ -1,7 +1,5 @@
 package com.example.bimmer;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,11 +10,11 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 public class FirstFragment extends Fragment {
-
+    private final String TAG = "ApplicationMessage";
     public FirstFragment() {
     }
 
@@ -40,20 +38,18 @@ public class FirstFragment extends Fragment {
         imgProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                requireActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container_view, new SecondFragment())
-                        .commit();
-                Log.d("111", "Clicked user profile button");
+                Log.d(TAG, "Clicked user profile button");
+                Bundle bundle = new Bundle();
+                bundle.putString("key", "hello world");
+                Navigation.findNavController(v).navigate(R.id.action_firstFragment_to_secondFragment, bundle);
             }
         });
         imgBlog = view.findViewById(R.id.blogLogo);
         imgBlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                requireActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container_view, new ThirdFragment())
-                        .commit();
-                Log.d("111", "Clicked user blog button");
+                Log.d(TAG, "Clicked user blog button");
+                Navigation.findNavController(v).navigate(R.id.action_firstFragment_to_thirdFragment);
             }
         });
     }

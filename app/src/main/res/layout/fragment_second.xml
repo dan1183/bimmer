@@ -41,8 +41,7 @@
         app:layout_constraintTop_toTopOf="@id/footerMainPage"
         app:srcCompat="@drawable/user"
         app:tint="#707070"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:onClick="switchToProfilePage" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/BMWLogo2"
@@ -92,8 +91,7 @@
         android:layout_marginTop="735dp"
         android:src="@drawable/home"
         app:tint="#707070"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:onClick="switchToMainPage" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/homePageText2"
@@ -151,10 +149,5 @@
         android:layout_marginTop="100dp"
         android:backgroundTint="#3DA1D8"
         android:text="Мое авто" />
-
-    <ListView
-        android:id="@+id/bmwListVIew"
-        android:layout_width="match_parent"
-        android:layout_height="736dp" />
 
 </FrameLayout>
