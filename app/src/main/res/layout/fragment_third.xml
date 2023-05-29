@@ -1,39 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ThirdFragment">
+
     <TextView
         android:id="@+id/footerMainPage"
         android:layout_width="match_parent"
         android:layout_height="51dp"
-        android:layout_marginTop="735dp"
         android:width="10dp"
         android:background="#000000"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/blogLogo"
         android:layout_width="50dp"
         android:layout_height="35dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="735dp"
+        android:layout_marginTop="1dp"
         android:src="@drawable/blog"
+        app:layout_constraintBottom_toTopOf="@+id/blogText"
+        app:layout_constraintStart_toEndOf="@+id/homePageLogo"
+        app:layout_constraintTop_toTopOf="@+id/footerMainPage"
         app:tint="#707070" />
 
     <ImageView
         android:id="@+id/homePageLogo"
         android:layout_width="50dp"
         android:layout_height="35dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="735dp"
+        android:layout_marginTop="1dp"
         android:src="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/homePageText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/footerMainPage"
         app:tint="#707070"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -41,8 +46,6 @@
         android:id="@+id/blogText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="770dp"
         android:width="50dp"
         android:height="15dp"
         android:fontFamily="sans-serif"
@@ -50,14 +53,14 @@
         android:textAlignment="center"
         android:textColor="#707070"
         android:textSize="10sp"
-        android:typeface="normal" />
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homePageText" />
 
     <TextView
         android:id="@+id/homePageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="770dp"
         android:width="50dp"
         android:height="15dp"
         android:fontFamily="sans-serif"
@@ -65,25 +68,29 @@
         android:textAlignment="center"
         android:textColor="#707070"
         android:textSize="10sp"
-        android:typeface="normal" />
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/BMWLogo4"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="167.5dp"
-        android:layout_marginTop="735dp"
-        android:src="@drawable/bmw_m_logo" />
+        android:src="@drawable/bmw_m_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/companyContactsLogo"
+        app:layout_constraintStart_toEndOf="@+id/blogLogo"
+        app:layout_constraintTop_toTopOf="@+id/footerMainPage" />
 
     <ImageView
         android:id="@+id/companyContactsLogo"
         android:layout_width="50dp"
         android:layout_height="35dp"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="735dp"
+        android:layout_marginTop="1dp"
         android:contentDescription="Switch to profile"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/companyContactsText"
+        app:layout_constraintEnd_toStartOf="@+id/userProfileLogo"
+        app:layout_constraintTop_toTopOf="@+id/footerMainPage"
         app:srcCompat="@drawable/free_icon_phone_call_126509"
         app:tint="#707070" />
 
@@ -91,8 +98,6 @@
         android:id="@+id/companyContactsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="770dp"
         android:width="50dp"
         android:height="15dp"
         android:fontFamily="sans-serif"
@@ -102,16 +107,19 @@
         android:textColor="#707070"
         android:textSize="10sp"
         android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userProfileText"
         tools:text="Контакты" />
 
     <ImageView
         android:id="@+id/userProfileLogo"
         android:layout_width="50dp"
         android:layout_height="35dp"
-        android:layout_marginStart="332dp"
-        android:layout_marginTop="735dp"
-        app:layout_constraintEnd_toEndOf="@id/footerMainPage"
-        app:layout_constraintTop_toTopOf="@id/footerMainPage"
+
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/userProfileText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/footerMainPage"
         app:srcCompat="@drawable/user"
         app:tint="#707070"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -120,8 +128,6 @@
         android:id="@+id/userProfileText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="332dp"
-        android:layout_marginTop="770dp"
         android:width="50dp"
         android:height="15dp"
         android:fontFamily="sans-serif"
@@ -129,14 +135,18 @@
         android:textAlignment="center"
         android:textColor="#707070"
         android:textSize="10sp"
-        android:typeface="normal" />
-
-
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/bmwRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="735dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-</FrameLayout>
+        android:layout_width="397dp"
+        android:layout_height="737dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/footerMainPage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
