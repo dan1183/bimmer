@@ -17,7 +17,7 @@ import androidx.navigation.Navigation;
 
 import com.example.bimmer.R;
 import com.example.bimmer.data.models.Users;
-import com.example.bimmer.ui.Prevalent;
+import com.example.bimmer.Prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

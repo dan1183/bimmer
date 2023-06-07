@@ -15,8 +15,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.bimmer.ui.MainActivity;
-
 public class CarService extends Service {
     public CarService() {
     }

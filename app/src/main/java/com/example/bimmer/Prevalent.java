@@ -1,4 +1,4 @@
-package com.example.bimmer.ui;
+package com.example.bimmer;
 
 import com.example.bimmer.data.models.Users;
 

@@ -1,4 +1,4 @@
-package com.example.bimmer.ui;
+package com.example.bimmer;
 
 import android.os.Bundle;
 

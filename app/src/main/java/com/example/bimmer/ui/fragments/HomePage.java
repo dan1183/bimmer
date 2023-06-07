@@ -17,7 +17,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 import com.example.bimmer.R;
-import com.example.bimmer.ui.DiscountDialog;
+import com.example.bimmer.DiscountDialog;
 
 public class HomePage extends Fragment {
     private final String TAG = "ApplicationMessage";
