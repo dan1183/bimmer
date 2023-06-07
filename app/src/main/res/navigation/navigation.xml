@@ -3,42 +3,108 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/homePageFragment">
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.bimmer.ui.fragments.HomePage"
+        android:label="home_page"
+        tools:layout="@layout/home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_contactsPageFragment"
+            app:destination="@id/contactsPageFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="com.example.bimmer.ui.fragments.Articles"
+        android:label="acrticles_page"
+        tools:layout="@layout/acrticles_page" >
+        <action
+            android:id="@+id/action_articlesFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_articlesFragment_to_contactsPageFragment"
+            app:destination="@id/contactsPageFragment" />
+        <action
+            android:id="@+id/action_articlesFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+        <action
+            android:id="@+id/action_articlesFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsPageFragment"
+        android:name="com.example.bimmer.ui.fragments.Contacts"
+        android:label="contacts_page"
+        tools:layout="@layout/contacts_page" >
+        <action
+            android:id="@+id/action_contactsPageFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_contactsPageFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment" />
+        <action
+            android:id="@+id/action_contactsPageFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+        <action
+            android:id="@+id/action_contactsPageFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="com.example.bimmer.ui.fragments.LoginPage"
+        android:label="login_page"
+        tools:layout="@layout/login_page" >
+        <action
+            android:id="@+id/action_loginPageFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_contactsPageFragment"
+            app:destination="@id/contactsPageFragment" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.bimmer.ui.fragments.Profile"
+        android:label="account_page"
+        tools:layout="@layout/account_page" >
+        <action
+            android:id="@+id/action_profileFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_contactsPageFragment"
+            app:destination="@id/contactsPageFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.bimmer.ui.fragments.Registration"
+        android:label="registration_page"
+        tools:layout="@layout/registration_page" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+    </fragment>
 
-    <fragment
-        android:id="@+id/firstFragment"
-        android:name="com.example.bimmer.FirstFragment"
-        android:label="fragment_first"
-        tools:layout="@layout/fragment_first" >
-        <action
-            android:id="@+id/action_firstFragment_to_secondFragment"
-            app:destination="@id/secondFragment" />
-        <action
-            android:id="@+id/action_firstFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/secondFragment"
-        android:name="com.example.bimmer.SecondFragment"
-        android:label="fragment_second"
-        tools:layout="@layout/fragment_second" >
-        <action
-            android:id="@+id/action_secondFragment_to_firstFragment"
-            app:destination="@id/firstFragment" />
-        <action
-            android:id="@+id/action_secondFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/thirdFragment"
-        android:name="com.example.bimmer.ThirdFragment"
-        android:label="fragment_third"
-        tools:layout="@layout/fragment_third" >
-        <action
-            android:id="@+id/action_thirdFragment_to_firstFragment"
-            app:destination="@id/firstFragment" />
-        <action
-            android:id="@+id/action_thirdFragment_to_secondFragment"
-            app:destination="@id/secondFragment" />
-    </fragment>
 </navigation>

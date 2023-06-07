@@ -1,4 +1,4 @@
-package com.example.bimmer;
+package com.example.bimmer.ui.stateholder.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,17 +10,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.bimmer.Item;
+import com.example.bimmer.R;
+
 import java.util.List;
 
 public class BMWAutoAdapter extends RecyclerView.Adapter< BMWAutoAdapter.ViewHolder>{
-    interface OnStateClickListener{
+    public interface OnStateClickListener{
         void onStateClick(Item item, int position);
     }
     private final OnStateClickListener onClickListener;
 
     private final LayoutInflater inflater;
     private final List<Item> items;
-    BMWAutoAdapter(OnStateClickListener onClickListener, Context context, List<Item> items1) {
+    public BMWAutoAdapter(OnStateClickListener onClickListener, Context context, List<Item> items1) {
         this.onClickListener = onClickListener;
         this.inflater = LayoutInflater.from(context);
         this.items = items1;

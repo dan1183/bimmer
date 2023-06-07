@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">bimmer</string>
     <string name="bimmer">BIMMER</string>
-    <string name="rusPhoneNumber">+7 (</string>
     <string-array name="Auto">
         <item>BMW 1</item>
         <item>BMW 2</item>
@@ -15,4 +14,10 @@
         <item>BMW X6</item>
         <item>BMW X7</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discountText1">Размещайте фирменную <b>наклейку</b> bimmer.ru на заднем стекле своего автомобиля и получайте скидку 10%. Цвет вы сможете выбрать сами.</string>
+    <string name="discountHeader">Скидка за наклейку bimmer.ru</string>
+    <string name="discountText2">Тем, кто ищет квалифицированный сервис для своего БМВ, мы даём возможность получить скидку на второй и все последующие ремонты или ТО.</string>
+    <string name="discountText3">Сотни наших клиентов уже сэкономили значительную сумму денег в масштабе года или нескольких лет на обслуживании и ремонте своих БМВ, благодаря нашим рекомендациям и регулярному контролю за состоянием Вашего БМВ.</string>
 </resources>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.Contacts">
+
+    <TextView
+        android:id="@+id/contactsPageLogo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bimmerLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/__"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/__" />
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:width="10dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/homePageLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/homePageText4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/footer"
+        app:tint="#707070"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/companyContactsLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="25dp"
+        android:contentDescription="Switch to profile"
+        app:layout_constraintBottom_toTopOf="@+id/companyContactsText4"
+        app:layout_constraintEnd_toStartOf="@+id/userProfileLogo"
+        app:layout_constraintTop_toTopOf="@+id/footer"
+        app:srcCompat="@drawable/free_icon_phone_call_126509"
+        app:tint="#707070" />
+
+    <ImageView
+        android:id="@+id/userProfileLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/userProfileText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/footer"
+        app:srcCompat="@drawable/user"
+        app:tint="#707070"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/BMWLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bmw_m_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/companyContactsLogo"
+        app:layout_constraintStart_toEndOf="@+id/blogLogo"
+        app:layout_constraintTop_toTopOf="@+id/footer" />
+
+    <TextView
+        android:id="@+id/companyContactsText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Контакты"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userProfileText4"
+        tools:text="Контакты" />
+
+    <TextView
+        android:id="@+id/userProfileText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Профиль"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/blogLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/blog"
+        app:layout_constraintBottom_toTopOf="@+id/blogText4"
+        app:layout_constraintStart_toEndOf="@+id/homePageLogo"
+        app:layout_constraintTop_toTopOf="@+id/footer"
+        app:tint="#707070" />
+
+    <TextView
+        android:id="@+id/blogText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Статьи"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homePageText4" />
+
+    <TextView
+        android:id="@+id/homePageText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Главная"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mapview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/contactsTextHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/phone_call"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Контакты"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactsPageLogo" />
+
+    <ImageView
+        android:id="@+id/whatsappIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/whatsapp"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toStartOf="@+id/mailIcon"
+        app:layout_constraintStart_toEndOf="@+id/phoneIcon" />
+
+    <TextView
+        android:id="@+id/contactsTextHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Задайте вопрос в чате "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/contactsTextBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/contactsTextBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="Напишите менеджеру в любой из мессенджеров и он сразу ответит на ваш вопрос "
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/whatsappIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/mailIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/mail"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "196038378449",
+    "project_id": "bimmer-motors-android-app",
+    "storage_bucket": "bimmer-motors-android-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196038378449:android:827ac4362e3ee0bf07d6f0",
+        "android_client_info": {
+          "package_name": "com.example.bimmer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196038378449-3g8m9crgjm1bb2b184634ddtr60939c7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bimmer",
+            "certificate_hash": "a3fff193e94e80f32bfa04089f08f6b52fad7b73"
+          }
+        },
+        {
+          "client_id": "196038378449-0fj8ovbv3rfu7u2fp9qk4pehhe19hmq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ZUhvoaiwe2Rl5CuikK9cDWhwZVQOoMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196038378449-0fj8ovbv3rfu7u2fp9qk4pehhe19hmq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

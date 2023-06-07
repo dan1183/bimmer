@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/articlesPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ThirdFragment">
+    tools:context=".ui.fragments.Articles">
 
     <TextView
-        android:id="@+id/footerMainPage"
+        android:id="@+id/headerArticlesPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bimmerLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/__"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/__" />
+
+    <TextView
+        android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:width="10dp"
@@ -23,22 +44,24 @@
         android:id="@+id/blogLogo"
         android:layout_width="50dp"
         android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="1dp"
         android:src="@drawable/blog"
         app:layout_constraintBottom_toTopOf="@+id/blogText"
         app:layout_constraintStart_toEndOf="@+id/homePageLogo"
-        app:layout_constraintTop_toTopOf="@+id/footerMainPage"
+        app:layout_constraintTop_toTopOf="@+id/footer"
         app:tint="#707070" />
 
     <ImageView
         android:id="@+id/homePageLogo"
         android:layout_width="50dp"
         android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="1dp"
         android:src="@drawable/home"
         app:layout_constraintBottom_toTopOf="@+id/homePageText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/footerMainPage"
+        app:layout_constraintTop_toTopOf="@+id/footer"
         app:tint="#707070"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -46,6 +69,7 @@
         android:id="@+id/blogText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
         android:width="50dp"
         android:height="15dp"
         android:fontFamily="sans-serif"
@@ -61,6 +85,7 @@
         android:id="@+id/homePageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
         android:width="50dp"
         android:height="15dp"
         android:fontFamily="sans-serif"
@@ -73,24 +98,25 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/BMWLogo4"
+        android:id="@+id/BMWLogo"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/bmw_m_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/companyContactsLogo"
         app:layout_constraintStart_toEndOf="@+id/blogLogo"
-        app:layout_constraintTop_toTopOf="@+id/footerMainPage" />
+        app:layout_constraintTop_toTopOf="@+id/footer" />
 
     <ImageView
         android:id="@+id/companyContactsLogo"
         android:layout_width="50dp"
         android:layout_height="35dp"
         android:layout_marginTop="1dp"
+        android:layout_marginRight="25dp"
         android:contentDescription="Switch to profile"
         app:layout_constraintBottom_toTopOf="@+id/companyContactsText"
         app:layout_constraintEnd_toStartOf="@+id/userProfileLogo"
-        app:layout_constraintTop_toTopOf="@+id/footerMainPage"
+        app:layout_constraintTop_toTopOf="@+id/footer"
         app:srcCompat="@drawable/free_icon_phone_call_126509"
         app:tint="#707070" />
 
@@ -98,6 +124,7 @@
         android:id="@+id/companyContactsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
         android:width="50dp"
         android:height="15dp"
         android:fontFamily="sans-serif"
@@ -117,9 +144,10 @@
         android:layout_height="35dp"
 
         android:layout_marginTop="1dp"
+        android:layout_marginRight="5dp"
         app:layout_constraintBottom_toTopOf="@+id/userProfileText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/footerMainPage"
+        app:layout_constraintTop_toTopOf="@+id/footer"
         app:srcCompat="@drawable/user"
         app:tint="#707070"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -128,6 +156,7 @@
         android:id="@+id/userProfileText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
         android:width="50dp"
         android:height="15dp"
         android:fontFamily="sans-serif"
@@ -139,14 +168,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <WebView
+        android:id="@+id/ArticlesWebView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerArticlesPage" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bmwRecyclerView"
-        android:layout_width="397dp"
-        android:layout_height="737dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@+id/footerMainPage"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

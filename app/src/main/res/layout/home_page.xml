@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.HomePage">
+
+    <TextView
+        android:id="@+id/backgroundBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:width="10dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/headerMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backgroundHomePage"
+        android:layout_width="0dp"
+        android:layout_height="386dp"
+        android:src="@drawable/mainpagebackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerMainPage" />
+
+    <TextView
+        android:id="@+id/blackBody"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="#000000"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundHomePage" />
+
+    <ImageView
+        android:id="@+id/companyContactsLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/companyContactsText"
+        app:layout_constraintEnd_toStartOf="@+id/userProfileLogo"
+        app:layout_constraintTop_toTopOf="@+id/footer"
+        app:srcCompat="@drawable/free_icon_phone_call_126509"
+        app:tint="#707070" />
+
+    <ImageView
+        android:id="@+id/userProfileLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/userProfileText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/footer"
+        app:srcCompat="@drawable/user"
+        app:tint="#707070"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/BMWLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bmw_m_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/companyContactsLogo"
+        app:layout_constraintStart_toEndOf="@+id/blogLogo"
+        app:layout_constraintTop_toTopOf="@+id/footer" />
+
+    <TextView
+        android:id="@+id/companyContactsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Контакты"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userProfileText"
+        tools:text="Контакты" />
+
+    <TextView
+        android:id="@+id/userProfileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Профиль"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/homePageLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/homePageText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/footer"
+        app:tint="#707070"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/homePageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Главная"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/blogLogo"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/blog"
+        app:layout_constraintBottom_toTopOf="@+id/blogText"
+        app:layout_constraintStart_toEndOf="@+id/homePageLogo"
+        app:layout_constraintTop_toTopOf="@+id/footer"
+        app:tint="#707070" />
+
+    <TextView
+        android:id="@+id/blogText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:width="50dp"
+        android:height="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Статьи"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homePageText" />
+
+    <ImageView
+        android:id="@+id/bimmerLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/__"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/__" />
+
+    <Button
+        android:id="@+id/discountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#3DA1D8"
+        android:text="Подробнее"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discountImage" />
+
+    <ImageView
+        android:id="@+id/discountImage"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:src="@drawable/resource__"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackBody" />
+
+    <TextView
+        android:id="@+id/homepageHeaderText"
+        android:layout_width="272dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Ремонт BMW любой сложности от инженеров из космической отрасли"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundHomePage" />
+
+    <ImageView
+        android:id="@+id/carLogo"
+        android:layout_width="72dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/car"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleLogo" />
+
+    <ImageView
+        android:id="@+id/satelliteLogo"
+        android:layout_width="50dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/spase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carLogo" />
+
+    <TextView
+        android:id="@+id/homePageRepairText1"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Беремся за самые сложные случаи от которых откажется 99% других сервисов. Потому что мы живем BMW — сами ездим на этих автомобилях."
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/circleLogo"
+        app:layout_constraintTop_toBottomOf="@+id/homepageHeaderText" />
+
+    <TextView
+        android:id="@+id/homePageRepairText2"
+        android:layout_width="199dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="Уже 15 лет мы специализируемся на ремонте и обслуживании автомобилей BMW. Мастера разбираются во всех тонкостях самого сложного ремонта. Сами разрабатываем новые методики ремонта и производства отдельных узлов."
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/carLogo"
+        app:layout_constraintTop_toBottomOf="@+id/homePageRepairText1" />
+
+    <TextView
+        android:id="@+id/homePageRepairText3"
+        android:layout_width="201dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Ранее основной костяк нашей команды работал в космической промышленности — строили космические аппараты. Поэтому разбираемся даже в самых сложных технических решениях и способны решать нестандартные задачи."
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/satelliteLogo"
+        app:layout_constraintTop_toBottomOf="@+id/homePageRepairText2" />
+
+    <ImageView
+        android:id="@+id/circleLogo"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homepageHeaderText"
+        app:srcCompat="@drawable/bmlogo235" />
+
+    <TextView
+        android:id="@+id/discountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:text="Скидка за наклейку"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/blackBody" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="408dp"
+        android:layout_height="115dp"
+        android:src="@drawable/_removal_ai__tmp_647f804bd44f8"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintTop_toBottomOf="@+id/discountButton"
+        tools:layout_editor_absoluteX="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
